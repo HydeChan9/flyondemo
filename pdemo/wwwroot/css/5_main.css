@@ -1,0 +1,33 @@
+body{
+	font:normal 18px Tahoma,Arial,Verdana;
+}
+#myCart{
+    margin: 0 auto;
+    width: 900px;
+	border:1px solid #fff;
+}
+input{
+    width: 60px;
+}
+tr{
+    border-bottom: 1px dotted #aaa;
+}
+
+td{
+    margin: 0px;
+    padding: 1px 10px 4px 10px;
+    border-bottom: 1px dotted #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+    
+#cartList{
+    font-size: medium;
+    font-weight: 800;
+	border-bottom: 1px solid #aaa;
+}
+#subtotal{
+    font-size: medium;
+    font-weight: 600;
+    color: Maroon;
+}

@@ -1,0 +1,239 @@
+﻿@model pdemo.Models.FlyOn
+
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>積分兌換</title>
+    <script src="~/js/Gift.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/Gift.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=**Montserrat:wght@100;200;300;400;500;600;700;800;900**&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerLeft">
+            <img src="../images/logo.png" alt="" class="logo">
+        </div>
+        <div class="headerRight">
+            <a href="#">登出</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- <img src="../images/background.png" alt="background" class="background"> -->
+        <div class="sec1">
+            <div class="nameAndNo">
+                <h5>Hello XXX</h5>
+                <p>Member no: hrhgkltrkl@gmail.com</p>
+            </div>
+            <div class="MemberPoint">
+                <div class="PointsBalance">
+                    <p>Points Balance</p>
+                    <p>Status Credits</p>
+                </div>
+                <div class="MemberCard">
+                    ssss
+                </div>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <!-- 特價商品，寫迴圈Gift.js -->
+            <!-- <div class="discountProduct">
+                <div class="discountFake">
+                    <a href="#">
+                        <div class="productImg">
+                            <img src="../images/Products/Discount/AMADANA 廚餘處理機.png" alt="" class="productPic">
+                        </div>
+                        <div class="overlay2">
+                            <span class="overlay4">Special Offer<br>18000</span>
+                        </div>
+
+                        <div class="discountProductA1">
+                            <h4 class="picBrand">Apple</h4>
+                            <h2 class="picName">iPhone 13</h2>
+                            <h4 class="picDes1">Point：30000</h4>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menuBar">
+            <ul class="menuBar1">
+                <li name="pointChange"><a href="#">積分兌換</a></li>
+                <li name="personalInfor"><a href="#">個人資料</a></li>
+                <li name="pointRule"><a href="#">兌換規則</a></li>
+                <li name="pointRecord"><a href="#">過去兌換</a></li>
+                <li name="discountProduct"><a href="#">優惠商品</a></li>
+            </ul>
+        </div>
+        <div class="menuBar2">
+            <a href="#"><img src="../images/icons-shopping-bag.png" alt="購物車" class="shoppingCart"></a>
+        </div>
+    </div>
+
+    <!-- 兌換規則分頁下的四個內容，預設看不到也不占空間 -->
+    <div class="RuleBar" style="display:none">
+        <ul class="RuleBarUl">
+            <li name="Rule"><a href="#">會員條款</a></li>
+            <li name="Point"><a href="#">點數說明</a></li>
+            <li name="Personal"><a href="#">個資使用條款</a></li>
+            <li name="App"><a href="#">應用程式使用條款</a></li>
+        </ul>
+    </div>
+    <!-- 個人資料，預設看不到也不占空間 -->
+    <div class="personalInfo" style="display:none">
+        <div class="personalInfo1">
+            <form asp-action="Gift">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="MemberID" />
+                <input type="hidden" asp-for="Password" />
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <th scope="row">姓名 Member Name</th>
+                            <td>
+                                <span>
+                                    <input asp-for="MemberName" class="form-control" />
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">帳號 Account</th>
+                            <td><input asp-for="Email" class="form-control" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">地址 Address</th>
+                            <td>
+                                <input asp-for="Address" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">手機 Cellphone</th>
+                            <td>
+                                <input asp-for="Phone" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">生日 Birthday</th>
+                            <td><input asp-for="Birthday" class="form-control" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">累積積分 Point</th>
+                            <td>
+                                <input asp-for="TotalPoint" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <!-- btn btn-secondary btn-md -->
+                            <td>
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="contentAll">
+        <!-- 每個分頁內容放這裡 -->
+    </div>
+
+    <!-- <div class="OrderList">
+        <div class="OrderList1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>訂單編號</th>
+                        <th>訂單日期</th>
+                        <th>訂單狀態</th>
+                        <th>出貨日期</th>
+                        <th>詳細資訊</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td label="訂單編號">20220905111</td>
+                        <td label="訂單日期">20220905</td>
+                        <td label="訂單狀態">已出貨</td>
+                        <td label="出貨日期">20220905</td>
+                        <td label="詳細資訊"><button class="btnMore">MORE</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+    <!-- footer -->
+   <!-- <div class="footer">
+        <div class="footerbar">
+            <div class="footerAbout">
+                <ul>
+                    <h3 class="footerH2">關於飛昂</h3>
+                    <li><a href="">認識飛昂</a></li>
+                    <li><a href="">媒體中心</a></li>
+                    <li><a href="">旅遊須知</a></li>
+                    <li><a href="">加入團隊</a></li>
+                    <li><a href="">網站導覽</a></li>
+                </ul>
+                <div class="footerAboutImg">
+                    <a href=""><img src="./images/facebook.png" alt="Facebook"></a>
+                    <a href=""><img src="./images/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="./images/twitter.png" alt="Twitter"></a>
+                    <a href=""><img src="./images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+             <div class="footerAct">
+                    <ul>
+                        <h3 class="footerH2">條例宣告</h3>
+                        <li><a href="">運送條款</a></li>
+                        <li><a href="">隱私權保護政策</a></li>
+                        <li><a href="">COOKIE使用政策</a></li>
+                        <li><a href="">顧客服務承諾</a></li>
+                        <li><a href="">智慧財產權與網站手機應用程式使用條款</a></li>
+                        <li><a href="">智慧財產權管理計畫</a></li>
+                    </ul>
+                </div>
+                <div class="footerWeb">
+                    <ul>
+                        <h3 class="footerH2">相關網站</h3>
+                        <li><a href="">免稅店購物</a></li>
+                        <li><a href="">飛昂小舖</a></li>
+                    </ul>
+                    <div class="footerWebimg">
+                        <img src="./images/app store.png" alt="App Store">
+                        <img src="./images/google-play-badge.png" alt="Google Play">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <script src="~/js/taiwan_districts.js"></script>
+        <script src="~/js/menubar.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+@model IEnumerable<pdemo.Models.FlyOnTickets>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Point)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PassportNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MemberID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TakeoffTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Point)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PassportNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MemberID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TakeoffTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookingNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookingNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookingNumber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

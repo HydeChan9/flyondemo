@@ -1,0 +1,158 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body>
+    <div id="big_wrapper">
+        <header>
+            <div id="newItem"></div>
+            <div id="content">
+                <nav>
+                    Item : <span id="itemCount">0</span> item(s)
+                </nav>
+                <nav>
+                    Subtotal : $ <span id="subtotal">0</span>
+                </nav>
+            </div>
+            <div id="shopButton">
+                <span class="cartProcess"><a asp-area="" asp-controller="Home" asp-action="ShopCartEdit">Edit Cart</a></span>
+                <span class="cartProcess">Checkout</span>
+            </div>
+            <div style="clear:both;"></div>
+        </header>
+        <hr>
+        <section>
+            <ul>
+                <li>
+                    <div>
+                        <img src="~/imgs/formosa.jpg">
+                        Formosa
+                    </div>
+                    <div>
+                        Price : $5000
+                    </div>
+                    <div>
+                        <span id="A1001" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Formosa|formosa.jpg|5000">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/brown.jpg">
+                        Teddy Brown
+                    </div>
+                    <div>
+                        Price : $7000
+                    </div>
+                    <div>
+                        <span id="A1002" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Teddy Brown|brown.jpg|7000">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/cinnamon.jpg">
+                        Teddy Cinnamon
+                    </div>
+                    <div>
+                        Price : $6800
+                    </div>
+                    <div>
+                        <span id="A1003" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Teddy Cinnamon|cinnamon.jpg|6800">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/innocent.jpg">
+                        Innocent Bear
+                    </div>
+                    <div>
+                        Price : $7200
+                    </div>
+                    <div>
+                        <span id="A1004" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Innocent Bear|innocent.jpg|7200">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div>
+                        <img src="~/imgs/lion.jpg">
+                        Lion Bear
+                    </div>
+                    <div>
+                        Price : $8000
+                    </div>
+                    <div>
+                        <span id="A1005" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Lion Bear|lion.jpg|8000">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/milk.jpg">
+                        Teddy Milk
+                    </div>
+                    <div>
+                        Price : $6000
+                    </div>
+                    <div>
+                        <span id="A1006" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Teddy Milk|milk.jpg|6000">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/panda.jpg">
+                        Panda
+                    </div>
+                    <div>
+                        Price : $6800
+                    </div>
+                    <div>
+                        <span id="A1007" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Panda|panda.jpg|6800">
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/imgs/peterRabbit.jpg">
+                        Peter Rabbit
+                    </div>
+                    <div>
+                        Price : $5500
+                    </div>
+                    <div>
+                        <span id="A1008" class="addButton">
+                            Add Cart
+                            <input type="hidden" value="Peter Rabbit|peterRabbit.jpg|5500">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <link rel="stylesheet" href="~/css/2_main.css">
+    <script src="~/js/3_new.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+

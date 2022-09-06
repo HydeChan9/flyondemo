@@ -1,0 +1,109 @@
+@model IEnumerable<pdemo.Models.FlyOn>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+
+
+<p> </p>
+
+<div style="background:url(https://picture-original.fevercdn.com/page-feversocial-20171120-1511164629742.jpg) 50% 50% no-repeat; padding:12px ">
+    <div style="border:1px solid #ffffff; padding:12px">
+        <div style="color:#ffffff; letter-spacing:2px; text-align:center">
+            <div> </div>
+
+            <p> </p>
+
+        </div>
+
+        <div style="letter-spacing:2px; text-align:center">
+            <div style="color:#ffd700; font-size:12px; text-align:left"> </div>
+
+            <div style="text-align:left">
+                <p>
+                    <a asp-action="Create">Create New</a>
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MemberName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Gender)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Address)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Email)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Phone)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Birthday)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Password)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TotalPoint)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MemberName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Gender)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Phone)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Birthday)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Password)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TotalPoint)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.MemberID">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.MemberID">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.MemberID">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="text-align:left"> <span style="color:#000000"></span> </div>
+
+            <div style="color:#ffd700; font-size:14px; text-align:left"> </div>
+        </div>
+    </div>
+</div>
+
+<p> </p>
+
+
+

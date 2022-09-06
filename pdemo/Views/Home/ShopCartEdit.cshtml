@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<body>
+    <div id="myCart">
+        <h1>
+            Shopping Cart
+        </h1>
+        <header id="cartList">
+            <table style="border-bottom:1px solid #ddd;">
+                <tr class="itemHead">
+                    <td style="width:200px;">Item List</td>
+                    <td style="width:280px;"></td>
+                    <td style="width:170px;">Price($)</td>
+                    <td style="width:60px;">Item(s)</td>
+                </tr>
+            </table>
+            <!-- 動態新增 -->
+            <!-- <div>
+                <table>
+                    <tr class="item">
+                        <td style="width:200px;">
+                            <img src="./imgs/formosa.jpg" width="80">
+                        </td>
+                        <td style="width:280px;" id="A1001">
+                            <p>Formosa</p>
+                            <button>Delete</button>
+                        </td>
+                        <td style="width:170px;">
+                            <p>5000</p>
+                        </td>
+                        <td style="width:60px;">
+                            <p>
+                                <input type="number" value="1" min="1">
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div> -->
+            <!-- ==== -->
+        </header>
+        <footer style="text-align:right;">
+            Total : <span id="total">0</span>
+        </footer>
+    </div>
+    <link rel="stylesheet" href="~/css/5_main.css">
+    <script src="~/js/6_new.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
