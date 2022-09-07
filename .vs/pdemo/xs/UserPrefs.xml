@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{936BE4AA-1FDB-43CF-A5BB-0728F7778940}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pdemo/wwwroot/js/menubar.js">
+    <Files>
+      <File FileName="pdemo/Views/FlyOn/Gift.cshtml" Line="87" Column="36" />
+      <File FileName="pdemo/Controllers/FlyOnTicketsController.cs" Line="1" Column="1" />
+      <File FileName="pdemo/wwwroot/js/menubar.js" Line="1" Column="1" />
+      <File FileName="pdemo/wwwroot/js/3_new.js" Line="1" Column="1" />
+      <File FileName="pdemo/wwwroot/js/Gift.js" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="pdemo" expanded="True">
+            <Node name="pdemo" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="FlyOn" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.pdemo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "air1I2iaBErYMnPVMSGcc1aXG6UFTj3N5YIVPQIRqAKpvOVHzJuwhZfonngfg+dWnrIXJN1D7YEugnSOGG7oOg==",
+  "dgSpecHash": "5AWKwGXtnTRw7lINIRCgiZx5g76+vIjUrckifAw3J5Oh409nhHDy09WXucWET7qhMwz8EpznNz89pvr9BRimVA==",
   "success": true,
-  "projectFilePath": "/Users/hyde/Downloads/pdemo1/pdemo/pdemo.csproj",
+  "projectFilePath": "/Users/hyde/Documents/GitHub/flyondemo/pdemo/pdemo.csproj",
   "expectedPackageFiles": [
     "/Users/hyde/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/Users/hyde/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

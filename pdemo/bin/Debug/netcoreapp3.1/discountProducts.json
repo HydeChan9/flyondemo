@@ -1,0 +1,72 @@
+[
+    {
+        "product_name":"廚餘處理機",
+        "product_description":"廚餘處理機",
+        "product_brand":"AMADANA",
+        "point":"20000",
+        "img":"../images/Products/Discount/原圖/AMADANA 廚餘處理機.jpg"
+    },
+    {
+        "product_name":"EP 頭戴式耳罩",
+        "product_description":"EP 頭戴式耳罩",
+        "product_brand":"BEATS",
+        "point":"12000",
+        "img":"../images/Products/Discount/原圖/BEATS EP 頭戴式耳罩.jpg"
+    },
+    {
+        "product_name":"COH FLT CRD CSE WINKIE",
+        "product_description":"FLAT CARD CASE卡夾",
+        "product_brand":"COACH",
+        "point":"40000",
+        "img":"../images/Products/Discount/原圖/COACH COH FLT CRD CSE WINKIE.jpg"
+    },
+    {
+        "product_name":"COH FLT CRD CSE SWEETIE",
+        "product_description":"FLAT CARD CASE卡夾",
+        "product_brand":"COACH",
+        "point":"15000",
+        "img":"../images/Products/Discount/原圖/COACH COH FLT CRD CSE SWEETIE.jpg"
+    },
+    {
+        "product_name":"SAUVAGE曠野之心香氛",
+        "product_description":"SAUVAGE曠野之心香氛",
+        "product_brand":"DIOR",
+        "point":"15000",
+        "img":"../images/Products/Discount/原圖/DIOR SAUVAGE曠野之心香氛.jpg"
+    },
+    {
+        "product_name":"POUR HOMME EDT",
+        "product_description":"大吉嶺男性淡香水",
+        "product_brand":"BVLGARI",
+        "point":"75000",
+        "img":"../images/Products/Discount/原圖/POUR HOMME EDT.jpg"
+    },
+    {
+        "product_name":"SUPERSONIC 吹風機",
+        "product_description":"SUPERSONIC 吹風機",
+        "product_brand":"DYSON",
+        "point":"25000",
+        "img":"../images/Products/Discount/原圖/DYSON SUPERSONIC 吹風機.jpg"
+    },
+    {
+        "product_name":"乾濕兩用三刀頭電鬍刀",
+        "product_description":"乾濕兩用三刀頭電鬍刀",
+        "product_brand":"PHILIPS",
+        "point":"15000",
+        "img":"../images/Products/Discount/原圖/乾濕兩用三刀頭電鬍刀.jpg"
+    },
+    {
+        "product_name":"GA LIP POWER",
+        "product_description":"奢華絲緞訂製唇膏",
+        "product_brand":"GIORGIO ARMANI",
+        "point":"10000",
+        "img":"../images/Products/Discount/原圖/GA LIP POWER.jpg"
+    },
+    {
+        "product_name":"EXTRA LIP TINT",
+        "product_description":"晶鑽桂馥潤色護唇膏",
+        "product_brand":"BOBBI BROWN",
+        "point":"25000",
+        "img":"../images/Products/Discount/原圖/EXTRA LIP TINT.jpg"
+    }
+]

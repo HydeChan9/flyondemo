@@ -78,7 +78,7 @@ namespace pdemo.Controllers
             {
                 return NotFound();
             }
-            return View(flyOn);
+            return PartialView(flyOn);
         }
 
         // POST: FlyOn/Edit/5

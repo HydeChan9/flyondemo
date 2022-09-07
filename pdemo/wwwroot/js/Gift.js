@@ -14,7 +14,7 @@ function doFirst() {
         <div class="discountFake">
         <a href="#">
             <div class="productImg">
-                <img src="../images/Products/Discount/${disPro.proBrand[i]} ${disPro.proName[i]}.png" alt="" class="productPic">
+                <img src="../../images/Products/Discount/${disPro.proBrand[i]} ${disPro.proName[i]}.png" alt="" class="productPic">
             </div>
             <div class="overlay2">
                 <span class="overlay4">Special Offer</span>
@@ -48,7 +48,7 @@ function doFirst() {
                           <a href="#">
                             <div class="myCard">
                                <div class="img-wrap">
-                                  <img src="${element.img}" alt="${element.product_name}">
+                                  <img src="$../../{element.img}" alt="${element.product_name}">
                                </div> 
                                     <span class="productBrand">${element.product_brand}</span>
                                     <span class="productName">${element.product_name}</span>
@@ -57,7 +57,7 @@ function doFirst() {
                             <div class="overlay">
                                <span class="overlay1">加入購物車
                                <br>
-                               <img src="../images/icons-shopping-bag-white.png" class="shoppingCartWhite"></span>
+                               <img src="../../images/icons-shopping-bag-white.png" class="shoppingCartWhite"></span>
                             </div>  
                             </div> 
                           </a>

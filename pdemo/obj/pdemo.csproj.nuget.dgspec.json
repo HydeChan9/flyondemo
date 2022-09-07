@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hyde/Downloads/pdemo1/pdemo/pdemo.csproj": {}
+    "/Users/hyde/Documents/GitHub/flyondemo/pdemo/pdemo.csproj": {}
   },
   "projects": {
-    "/Users/hyde/Downloads/pdemo1/pdemo/pdemo.csproj": {
+    "/Users/hyde/Documents/GitHub/flyondemo/pdemo/pdemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hyde/Downloads/pdemo1/pdemo/pdemo.csproj",
+        "projectUniqueName": "/Users/hyde/Documents/GitHub/flyondemo/pdemo/pdemo.csproj",
         "projectName": "pdemo",
-        "projectPath": "/Users/hyde/Downloads/pdemo1/pdemo/pdemo.csproj",
+        "projectPath": "/Users/hyde/Documents/GitHub/flyondemo/pdemo/pdemo.csproj",
         "packagesPath": "/Users/hyde/.nuget/packages/",
-        "outputPath": "/Users/hyde/Downloads/pdemo1/pdemo/obj/",
+        "outputPath": "/Users/hyde/Documents/GitHub/flyondemo/pdemo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hyde/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,107 @@
+[
+    {
+        "product_name":"COH PRD PTCH CHRTR 18",
+        "product_description":"徽章後背包",
+        "product_brand":"Coach",
+        "point":"30000",
+        "img":"../images/Products/Normal/COH PRD PTCH CHRTR 18.jpg"
+    },
+    {
+        "product_name":"HEATHER LG SHLDR",
+        "product_description":"HEATHER 大號肩背包",
+        "product_brand":"Coach",
+        "point":"40000",
+        "img":"../images/Products/Normal/HEATHER LG SHLDR.jpg"
+    },
+    {
+        "product_name":"BUCKET BAG IN LEATHER MINI",
+        "product_description":"迷你皮革水桶包",
+        "product_brand":"TOD'S",
+        "point":"35000",
+        "img":"../images/Products/Normal/BUCKET BAG IN LEATHER MINI.jpg"
+    },
+    {
+        "product_name":"DELIA",
+        "product_description":"DELIA 後背包",
+        "product_brand":"KIPLING",
+        "point":"15000",
+        "img":"../images/Products/Normal/DELIA.jpg"
+    },
+    {
+        "product_name":"OFFSPRING NECKLACE",
+        "product_description":"OFFSPRING18K金墜鍊",
+        "product_brand":"GEORG JENSEN",
+        "point":"65000",
+        "img":"../images/Products/Normal/OFFSPRING NECKLACE.jpg"
+    },
+    {
+        "product_name":"HALO 18K YELLOW GOLD EARRINGS",
+        "product_description":"HALO 18K黃金鑲鑽耳環",
+        "product_brand":"GEORG JENSEN",
+        "point":"75000",
+        "img":"../images/Products/Normal/HALO 18K YELLOW GOLD DIAMOND EARRINGS.jpg"
+    },
+    {
+        "product_name":"GINGER BANGLE",
+        "product_description":"GINGER 手環",
+        "product_brand":"SWAROVSKI",
+        "point":"20000",
+        "img":"../images/Products/Normal/GINGER BANGLE.jpg"
+    },
+    {
+        "product_name":"GINGER PENDANT",
+        "product_description":"GINGER 項鍊",
+        "product_brand":"SWAROVSKI",
+        "point":"15000",
+        "img":"../images/Products/Normal/GINGER PENDANT.jpg"
+    },
+    {
+        "product_name":"INFINITY BRACELET",
+        "product_description":"INFINITY玫瑰金手鐲",
+        "product_brand":"SWAROVSKI",
+        "point":"10000",
+        "img":"../images/Products/Normal/INFINITY BRACELET.jpg"
+    },
+    {
+        "product_name":"MUSES FOUNTAIN PEN",
+        "product_description":"MUSES 系列鋼筆",
+        "product_brand":"MONTBLANC",
+        "point":"25000",
+        "img":"../images/Products/Normal/MUSES FOUNTAIN PEN.jpg"
+    },
+    {
+        "product_name":"CASUAL BELT",
+        "product_description":"男士雙面皮帶",
+        "product_brand":"MONTBLANC",
+        "point":"15000",
+        "img":"../images/Products/Normal/CASUAL BELT.jpg"
+    },
+    {
+        "product_name":"BLACK 35 MM LEATHER BELT",
+        "product_description":"黑色 35 毫米皮帶",
+        "product_brand":"MONTBLANC",
+        "point":"30000",
+        "img":"../images/Products/Normal/BLACK 35 MM LEATHER BELT.jpg"
+    },
+    {
+        "product_name":"BARSTOW WATCH",
+        "product_description":"美式簡約三針時尚腕錶",
+        "product_brand":"FOSSIL",
+        "point":"18000",
+        "img":"../images/Products/Normal/BARSTOW WATCH.jpg"
+    },
+    {
+        "product_name":"G-TIMELESS",
+        "product_description":"G-TIMELESS腕錶",
+        "product_brand":"GUCCI",
+        "point":"25000",
+        "img":"../images/Products/Normal/G-TIMELESS.jpg"
+    },
+    {
+        "product_name":"LMDM",
+        "product_description":"經典蜜蜂時尚皮帶腕錶",
+        "product_brand":"GUCCI",
+        "point":"35000",
+        "img":"../images/Products/Normal/LMDM.jpg"
+    }
+]
