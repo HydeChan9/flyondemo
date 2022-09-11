@@ -1,11 +1,53 @@
 ﻿<Properties StartupConfiguration="{936BE4AA-1FDB-43CF-A5BB-0728F7778940}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="pdemo/wwwroot/js/menubar.js">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.pdemo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="pdemo/wwwroot/css/sb-admin-2.css">
     <Files>
       <File FileName="pdemo/Views/FlyOn/Gift.cshtml" Line="87" Column="36" />
-      <File FileName="pdemo/Controllers/FlyOnTicketsController.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Controllers/FlyOnTicketsController.cs" Line="27" Column="1" />
       <File FileName="pdemo/wwwroot/js/menubar.js" Line="1" Column="1" />
       <File FileName="pdemo/wwwroot/js/3_new.js" Line="1" Column="1" />
       <File FileName="pdemo/wwwroot/js/Gift.js" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Home/Lo.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Home/Privacy.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/FlyOnTickets/Index.cshtml" Line="17" Column="1" />
+      <File FileName="pdemo/Views/FlyOnTickets/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Shared/_Layout.cshtml" Line="30" Column="15" />
+      <File FileName="pdemo/Models/FlyOnTickets.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Models/FlyOn.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Controllers/FlyOnController.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Controllers/MoviesController.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Data/MvcMovieContext.cs" Line="1" Column="1" />
+      <File FileName="pdemo/DBContext.cs" Line="1" Column="1" />
+      <File FileName="pdemo/TicketsContext.cs" Line="9" Column="66" />
+      <File FileName="pdemo/pdemo.csproj" Line="1" Column="1" />
+      <File FileName="pdemo/Views/FlyOn/Index.cshtml" Line="1" Column="8" />
+      <File FileName="pdemo/Migrations/_InitialCreate.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/wwwroot/lib/jquery-validation/dist/additional-methods.js" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Home/ShopCart.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Home/ShopCartEdit.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Movies/Index.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/appsettings.json" Line="1" Column="1" />
+      <File FileName="pdemo/Startup.cs" Line="76" Column="48" />
+      <File FileName="pdemo/Rule.json" Line="1" Column="1" />
+      <File FileName="pdemo/Program.cs" Line="1" Column="1" />
+      <File FileName="pdemo/Product.json" Line="1" Column="1" />
+      <File FileName="pdemo/normalProducts.json" Line="1" Column="1" />
+      <File FileName="pdemo/discountProducts.json" Line="1" Column="1" />
+      <File FileName="pdemo/Views/Movies/Create.cshtml" Line="1" Column="1" />
+      <File FileName="pdemo/Models/Movies.cs" Line="1" Column="1" />
+      <File FileName="pdemo/wwwroot/lib/bootstrap/dist/css/bootstrap.css" Line="9775" Column="1" />
+      <File FileName="pdemo/wwwroot/css/sb-admin-2.css" Line="10857" Column="1" />
+      <File FileName="pdemo/wwwroot/css/sb-admin-2.min.css" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +55,32 @@
           <Node name="pdemo" expanded="True">
             <Node name="pdemo" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="FlyOn" expanded="True" />
+                <Node name="FlyOnTickets" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Movies" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
+                <Node name="css" expanded="True">
+                  <Node name="sb-admin-2.css" expanded="True" />
+                </Node>
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="css" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="jquery" expanded="True" />
+                </Node>
+                <Node name="vendor" expanded="True">
+                  <Node name="bootstrap" expanded="True" />
+                  <Node name="jquery" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -30,10 +92,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.pdemo PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

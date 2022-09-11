@@ -12,6 +12,6 @@ namespace pdemo
             modelBuilder.Entity<FlyOnTickets>().ToTable("FlyOnTickets");
             //modelBuilder.Entity<FlyOn>().ToView(nameof(FlyOn)).HasKey(t => t.MemberID);
         }
-        public DbSet<pdemo.Models.FlyOnTickets> FlyOnTickets { get; set; }
+        public DbSet<FlyOnTickets> FlyOnTickets { get; set; }
     }
 }

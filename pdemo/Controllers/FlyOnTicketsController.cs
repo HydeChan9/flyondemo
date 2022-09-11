@@ -20,10 +20,24 @@ namespace pdemo.Controllers
         }
 
         // GET: FlyOnTickets
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            return View(await _context.WebLoggingTicket.ToListAsync());
+            var tickets = from t in _context.FlyOnTickets
+                         select t;
+
+                tickets = tickets.Where(s => s.PassportNumber.Contains(id));
+            
+            return View(await _context.FlyOnTickets.ToListAsync());
         }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
+
+
+
 
         // GET: FlyOnTickets/Details/5
         public async Task<IActionResult> Details(string id)

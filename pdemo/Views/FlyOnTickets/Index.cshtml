@@ -6,60 +6,283 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Point)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalPrice)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PassportNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MemberID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FlightID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TakeoffTime)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Point)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalPrice)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PassportNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MemberID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FlightID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TakeoffTime)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.BookingNumber">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.BookingNumber">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.BookingNumber">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<style>
+
+    .table {
+        box-shadow: 3px 4px 0px 0px #1564ad;
+        background: linear-gradient(to bottom, #f3f7fb 5%, #c0d9f2 100%);
+        background-color: #e2eefa;
+        border-radius: 5px;
+        border: 1px solid #337bc4;
+        display: inline-block;
+        cursor: pointer;
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 12px 44px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #528ecc;
+    }
+
+        .table tr:hover {
+            background: linear-gradient(to bottom, #c5e0fb 5%, #bddbfa 100%);
+            background-color: #80b5ea;
+        }
+
+    button:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menuBar {
+        width: 100%
+    }
+
+    .menuBar1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+        .menuBar1 li {
+            font-size: 16px;
+            width: 20%;
+            text-align: center;
+            color: darkgrey;
+            background-color: #E4E4E4;
+        }
+
+
+            .menuBar1 li a {
+                display: block;
+                height: 55px;
+                text-decoration: none;
+                color: #2f3363;
+                background-color: #E4E4E4;
+                padding-top: 18px;
+            }
+
+        .menuBar1 a:link {
+            text-decoration: none;
+        }
+
+    .menuBar li:hover {
+        background-color: whitesmoke;
+        height: 100%;
+        width: 20%;
+    }
+
+
+
+    .menuBar2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 9%;
+    }
+
+    .todo {
+        margin-top: 20px;
+    }
+
+    td {
+        border-left: 20px;
+    }
+</style>
+<div style="margin:20px;">
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    <form asp-controller="FlyOnTickets" asp-action="Index" method="get">
+        <p>
+            pwd: <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Point)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TotalPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PassportNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MemberID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FlightID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TakeoffTime)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Point)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PassportNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MemberID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FlightID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TakeoffTime)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.BookingNumber">Edit <i class="fas fa-tag"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="menu">
+        <div class="menuBar">
+            <ul class="menuBar1">
+                <li name="seatChange"><a href="#">change flight</a></li>
+                <li name="dateChange"><a href="#">change date</a></li>
+                <li name="ftChange"><a href="#">change seat</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="todo">
+        <table>
+            <tr>
+                <td>MemberID:</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>FlightID:</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Lastname:</td>
+                <td>hyde</td>
+            </tr>
+            <tr>
+                <td>Firstname:</td>
+                <td>ch</td>
+            </tr>
+        </table>
+        <div>
+            <select style="margin-top:20px;">
+                <option>Japan</option>
+                <option>HongKong</option>
+                <option>Bankok</option>
+                <option>Korean</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="changeDate" style="display:none">
+        <div class="personalInfo1">
+            <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <th scope="row">姓名 Member Name</th>
+                            <td>
+                                <span>
+                                    123
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">帳號 Account</th>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">地址 Address</th>
+                            <td>
+                                11
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">手機 Cellphone</th>
+                            <td>
+                                11
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">生日 Birthday</th>
+                            <td>
+                                11
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">累積積分 Point</th>
+                            <td>
+                                11
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <!-- btn btn-secondary btn-md -->
+                            <td>
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="changeSeat">
+
+    </div>
+</div>
+<script>
+            const ftChange = document.getElementsByName("ftChange");
+            ftChange[0].onclick = function () {
+                todo.style.display = "none";
+                changeDate.style.display = "none";
+                changeSeat.style.display = "";
+            };
+
+            const dateChange = document.getElementsByName("dateChange");
+            const changeDate = document.querySelector(".changeDate");
+            dateChange[0].onclick = function () {
+                todo.style.display = "none";
+                changeDate.style.display = "";
+                changeSeat.style.display = "none";
+            };
+
+            const seatChange = document.getElementsByName("seatChange");
+            const todo = document.querySelector(".todo");
+            seatChange[0].onclick = function () {
+                todo.style.display = "";
+                changeDate.style.display = "none";
+            };
+
+</script>
